@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "es6",
+      "lib": ["es6", "dom"],
+      "sourceMap": true,
+      "typeRoots": [
+        "./typings",
+        "../node_modules/@types"
+      ],
+      "types": ["cypress", "node"],
+      "moduleResolution":"node"
+    },
+    "include": ["**/*.ts"],
+    "paths": {
+      "@badeball/*": ["node_modules/@badeball/*"]
+    }
+  }

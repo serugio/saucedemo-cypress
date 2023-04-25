@@ -1,3 +1,8 @@
 Feature: purchase
+
+    Background:
+        Given User visits saucelabs page
+
     Scenario: succesfull purchase
-    When I visit saucelabs page
+        When user makes login with standardUser
+    

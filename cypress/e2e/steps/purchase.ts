@@ -1,8 +1,6 @@
-import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { When, Then, Given } from "@badeball/cypress-cucumber-preprocessor";
 
-When("I visit saucelabs page", () => {
-  cy.visit("/");
-});
+
 
 Then("I should see a search bar", () => {
   cy.get("input").should(

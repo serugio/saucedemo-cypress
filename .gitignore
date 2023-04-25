@@ -69,3 +69,6 @@ typings/
 # project files
 /mochareports/*
 /reports/*
+
+# extension config
+.vs_code/

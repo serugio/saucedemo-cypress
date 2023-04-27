@@ -18,8 +18,16 @@ class BasePage {
             cy.get(element).should('exist');
             cy.get(element).type(inputData);
         }
-
     }
+
+    static getValueElement(locator: string): string {
+        return Cypress.$(locator).attr('value');
+    }
+
+    static getTextElement(locator: string): string {
+        return Cypress.$(locator).text();
+    }
+    
 }
 
 export default BasePage;

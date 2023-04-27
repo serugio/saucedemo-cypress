@@ -5,6 +5,7 @@ import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild
 
 export default defineConfig({
   e2e: {
+    chromeWebSecurity: false,
     pageLoadTimeout: 10000,
     baseUrl: 'https://www.saucedemo.com/',
     specPattern: "**/*.feature",

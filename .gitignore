@@ -72,3 +72,6 @@ typings/
 
 # extension config
 .vs_code/
+
+# cypress
+cypress/videos/

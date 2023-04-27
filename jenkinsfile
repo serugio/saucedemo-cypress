@@ -15,12 +15,12 @@ pipeline {
         }
         stage('Dependencies') {
            steps {
-               sh 'npm i'
+               npm i
            }
        }
         stage('Test') {
             steps {
-                sh 'npm run E2ETest'
+                npm run E2ETest
                 
             }
         }

@@ -11,7 +11,7 @@ pipeline {
         stage('checkout') {
             steps {
                 // checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'serch', url: 'https://github.com/serugio/saucedemo-cypress']])
-                checkout([$class: 'GitSCM', branches: [[name: "*/master"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SubmoduleOption', disableSubmodules: false, parentCredentials: false, recursiveSubmodules: false, reference: '', trackingSubmodules: false]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'serch', url: 'https://github.com/serugio/saucedemo-cypress']]])
+                checkout([$class: 'GitSCM', branches: [[name: "master"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SubmoduleOption', disableSubmodules: false, parentCredentials: false, recursiveSubmodules: false, reference: '', trackingSubmodules: false]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'serch', url: 'https://github.com/serugio/saucedemo-cypress']]])
             }
         }
     //     stage('Dependencies') {

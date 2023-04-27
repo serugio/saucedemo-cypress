@@ -1,18 +1,19 @@
 pipeline {
     agent any
 
-    tools {nodejs "Node18"}
+//     tools {nodejs "Node18"}
 
-    environment {
-       CHROME_BIN = '/bin/google-chrome'
-   }
+//     environment {
+//        CHROME_BIN = '/bin/google-chrome'
+//    }
 
     stages {
         stage('checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/master']],
-                userRemoteConfigs: [[credentialsId: 'serch',
-                url: 'https://github.com/serugio/saucedemo-cypress']])
+                checkout scmGit(
+                    branches: [[name: '*/master']],
+                    userRemoteConfigs: [[credentialsId: 'serch',
+                        url: 'https://github.com/serugio/saucedemo-cypress']])
             }
         }
     //     stage('Dependencies') {

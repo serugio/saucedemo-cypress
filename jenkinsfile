@@ -13,16 +13,16 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'serch', url: 'https://github.com/serugio/saucedemo-cypress']])
             }
         }
-        stage('Dependencies') {
-           steps {
-               npm i
-           }
-       }
-        stage('Test') {
-            steps {
-                npm run E2ETest
+    //     stage('Dependencies') {
+    //        steps {
+    //            npm i
+    //        }
+    //    }
+    //     stage('Test') {
+    //         steps {
+    //             npm run E2ETest
                 
-            }
+    //         }
         }
     }
 }

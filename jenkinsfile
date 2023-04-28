@@ -19,15 +19,13 @@ pipeline {
         stage('Dependencies') {
            steps {
                bat 'npm install'
-               echo "instale Dependencies"
            }
        }
-    //     stage('Test') {
-    //         steps {
-    //             npm run E2ETest
-                
-    //         }
-        // }
+        stage('Test') {
+            steps {
+                bat 'npm run E2ETest'
+            }
+        }
     }
 }
 

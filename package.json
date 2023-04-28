@@ -22,5 +22,8 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/e2e/**"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
   }
 }

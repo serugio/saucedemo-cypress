@@ -14,14 +14,14 @@ pipeline {
                     branches: [[name: '*/master']],
                     userRemoteConfigs: [[credentialsId: 'serch',
                         url: 'https://github.com/serugio/saucedemo-cypress']])
-                echo "hice checkout"
             }
         }
-    //     stage('Dependencies') {
-    //        steps {
-    //            npm i
-    //        }
-    //    }
+        stage('Dependencies') {
+           steps {
+               npm install
+               echo "instale Dependencies"
+           }
+       }
     //     stage('Test') {
     //         steps {
     //             npm run E2ETest

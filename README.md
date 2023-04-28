@@ -49,7 +49,7 @@ Jenkinsfile was created in a windows machine, for this reason "bat" command is u
 
 Is the implementation of an E2E test case for the purchase flow of the https://www.saucedemo.com/ web application.
 - Cypress is the chosen automation tool
-- It was added support to Gherkins sintax in order to allow BDD approach. (using 'feature' 'stepDefinition' and 'pageClasess' approach.
+- It was added support to Gherkins syntax in order to allow BDD approach. (using 'feature' 'stepDefinition' and 'pageClasess' approach.
 - It was added support to typescript
 - It is using mochawesome reports as reporting tool.
 

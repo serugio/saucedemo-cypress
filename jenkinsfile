@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Dependencies') {
            steps {
-               cmd 'npm install'
+               bat 'npm install'
                echo "instale Dependencies"
            }
        }

@@ -67,3 +67,6 @@ Is the implementation of an E2E test case for the purchase flow of the https://w
 - due to the time I chosed to work with an E2E test case that covers the positive path of the purchase flow. However, the coverage can be improved adding different scenarios like (logout in the middle of the flow and then re-login, include error paths, validate that prices and taxes work as intended).
 -test case design is delivered in attached file trough email.
 
+### NOTE
+- the .xlsx file with the test cases is uploaded to the repo just for ease of access, it is not recommended to store this kind of files in control version repositories
+

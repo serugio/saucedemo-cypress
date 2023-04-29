@@ -2,6 +2,16 @@
 UI test case implementation using cypress
 
 
+## local test execution
+
+https://user-images.githubusercontent.com/43422922/235314841-88c160e1-49ef-42ee-87f5-5b7c667e7df6.mp4
+
+## pipeline headless mode demo
+
+https://user-images.githubusercontent.com/43422922/235314133-bf6f68f7-07e4-4774-8946-05d6e87c9f79.mp4
+
+
+
 ## To Enable CI/CD in Jenkins
 
 1. Make sure you have installed Jenkins with following any guide like this one and make sure to install suggested plugins: https://www.jenkins.io/download/#downloading-jenkins
